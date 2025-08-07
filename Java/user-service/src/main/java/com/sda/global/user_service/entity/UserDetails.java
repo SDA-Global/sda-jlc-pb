@@ -1,4 +1,4 @@
-package com.sda.global.user_service.Entity;
+package com.sda.global.user_service.entity;
 
 
 import jakarta.persistence.Entity;

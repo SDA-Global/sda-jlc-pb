@@ -1,6 +1,6 @@
 package com.sda.global.order_service.service;
 
-import com.sda.global.order_service.Entity.OrderDetails;
+import com.sda.global.order_service.entity.OrderDetails;
 import com.sda.global.order_service.feign.ProductFeign;
 import com.sda.global.order_service.feign.UserFeign;
 import com.sda.global.order_service.model.BookingStatus;

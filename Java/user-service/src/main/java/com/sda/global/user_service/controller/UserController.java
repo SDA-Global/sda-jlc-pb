@@ -1,6 +1,6 @@
 package com.sda.global.user_service.controller;
 
-import com.sda.global.user_service.Entity.UserDetails;
+import com.sda.global.user_service.entity.UserDetails;
 import com.sda.global.user_service.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

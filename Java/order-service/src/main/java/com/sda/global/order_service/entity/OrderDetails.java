@@ -1,25 +1,21 @@
-package com.sda.global.product_service.Entity;
-
+package com.sda.global.order_service.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class ProductDetails {
+public class OrderDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Integer orderId;
     private Integer productId;
-    private String name;
-    private String type;
-    private int price;
-    private int count;
+    private Integer customerId;
+    private Integer totalFare;
+    private String orderStatus;
+    private boolean isActive;
 }

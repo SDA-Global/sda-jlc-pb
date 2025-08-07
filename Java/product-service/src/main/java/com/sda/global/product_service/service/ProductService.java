@@ -1,6 +1,6 @@
 package com.sda.global.product_service.service;
 
-import com.sda.global.product_service.Entity.ProductDetails;
+import com.sda.global.product_service.entity.ProductDetails;
 import com.sda.global.product_service.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

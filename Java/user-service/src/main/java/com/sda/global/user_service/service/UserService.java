@@ -1,6 +1,6 @@
 package com.sda.global.user_service.service;
 
-import com.sda.global.user_service.Entity.UserDetails;
+import com.sda.global.user_service.entity.UserDetails;
 import com.sda.global.user_service.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

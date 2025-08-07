@@ -1,6 +1,6 @@
 package com.sda.global.product_service.repository;
 
-import com.sda.global.product_service.Entity.ProductDetails;
+import com.sda.global.product_service.entity.ProductDetails;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

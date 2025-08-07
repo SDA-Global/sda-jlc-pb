@@ -1,6 +1,6 @@
 package com.sda.global.order_service.controller;
 
-import com.sda.global.order_service.Entity.OrderDetails;
+import com.sda.global.order_service.entity.OrderDetails;
 import com.sda.global.order_service.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
