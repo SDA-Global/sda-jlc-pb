@@ -32,7 +32,7 @@ DB: sda-db
 `select * from order_details od ;`
 
 # Steps to run project
-1. Run the service registry
-2. Run the config server
-3. Run the api gateway
+1. Run the `service registry`
+2. Run the `config server`
+3. Run the `api gateway`
 4. Run remaning micro services (user/product/order service)
