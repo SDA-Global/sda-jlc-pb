@@ -36,3 +36,9 @@ DB: sda-db
 2. Run the `config server`
 3. Run the `api gateway`
 4. Run remaning micro services (user/product/order service)
+
+# Common API
+
+`http://localhost:8000/user/all`
+
+`http://localhost:8000/prod/all`
