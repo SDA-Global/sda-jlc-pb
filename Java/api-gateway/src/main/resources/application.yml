@@ -2,17 +2,32 @@ spring:
   cloud:
     gateway:
       server:
-        webmvc:
+        webflux:
           routes:
             - id: user-service
               uri: lb://USER-SERVICE
               predicates:
                 - Path=/user/**
+              filters:
+                - name: CircuitBreaker
+                  args:
+                    name: user-service
+                    fallbackuri: forward:/userFallback
             - id: product-service
               uri: lb://PRODUCT-SERVICE
               predicates:
                 - Path=/prod/**
+              filters:
+                - name: CircuitBreaker
+                  args:
+                    name: product-service
+                    fallbackuri: forward:/prodFallback
             - id: order-service
               uri: lb://ORDER-SERVICE
               predicates:
                 - Path=/ord/**
+              filters:
+                - name: CircuitBreaker
+                  args:
+                    name: order-service
+                    fallbackuri: forward:/ordFallback
