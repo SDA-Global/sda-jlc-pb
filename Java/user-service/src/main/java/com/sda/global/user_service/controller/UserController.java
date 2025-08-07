@@ -3,10 +3,7 @@ package com.sda.global.user_service.controller;
 import com.sda.global.user_service.Entity.UserDetails;
 import com.sda.global.user_service.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,6 +17,11 @@ public class UserController {
     @GetMapping("/user/all")
     public List<UserDetails> getUser(){
         return userService.getAllUser();
+    }
+
+    @GetMapping("/user/{userId}")
+    public UserDetails getUserById(@PathVariable Integer userId) {
+        return userService.getUserById(userId);
     }
 
     @PostMapping("/user/add")

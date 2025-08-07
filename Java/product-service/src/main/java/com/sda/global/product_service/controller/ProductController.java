@@ -3,10 +3,7 @@ package com.sda.global.product_service.controller;
 import com.sda.global.product_service.Entity.ProductDetails;
 import com.sda.global.product_service.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,7 +20,12 @@ public class ProductController {
     }
 
     @PostMapping("/prod/add")
-    public ProductDetails addUser(@RequestBody ProductDetails productDetails){
-        return productService.addUser(productDetails);
+    public ProductDetails addProduct(@RequestBody ProductDetails productDetails){
+        return productService.addProduct(productDetails);
+    }
+
+    @GetMapping("/prod/{productId}")
+    public ProductDetails getProductById(@PathVariable Integer productId) {
+        return productService.getProductById(productId);
     }
 }

@@ -17,7 +17,11 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public ProductDetails addUser(ProductDetails userDetails){
+    public ProductDetails addProduct(ProductDetails userDetails){
         return productRepository.save(userDetails);
+    }
+
+    public ProductDetails getProductById(Integer productId) {
+        return productRepository.getProductByProductId(productId);
     }
 }
