@@ -1,5 +1,7 @@
 # Spring boot workshop at priyadarshini bhagwati college of engineering (5-Aug-25)
 
+![alt text](https://github.com/SDA-Global/sda-jlc-pb/blob/main/Java/sda-workshop-spring-tech-application-design.png?raw=true)
+
 Tools : Pre requisite
 1. Intellij community edition
 https://www.jetbrains.com/idea/download/?section=windows
