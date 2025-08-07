@@ -19,6 +19,9 @@ https://www.postman.com/downloads/
 6. Dbeaver community edition
 https://dbeaver.io/download/
 
+# Git Config url
+https://github.com/SDA-Global/sda-jlc-pb-config
+
 # Steps to run project
 1. Run the service registry
 2. Run the config server
